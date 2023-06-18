@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Hero from 'public/hero.png';
+// import Hero from '/hero.png'
 import styles from './page.module.css';                                 
 import Button from '@/components/Button/Button';
 
@@ -14,7 +14,7 @@ const Home = () => {
           <Button url="/portfolio" text="See Our Works"/>
       </div>
       <div className={styles.item}>
-      <Image src={Hero} className={styles.img} alt=''/>
+      <Image src='/hero.png' width={500} height={500} className={styles.img} alt=''/>
       </div>
     </section>
   );
